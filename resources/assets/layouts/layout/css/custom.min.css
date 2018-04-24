@@ -1,0 +1,7 @@
+form#tb1{
+    overflow-x: scroll
+}
+
+#tbl1 tbody th {
+    min-width: 200px;
+}

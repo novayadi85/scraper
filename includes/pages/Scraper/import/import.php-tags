@@ -1,0 +1,1143 @@
+<div class="row">
+	<div class="col-md-12">
+    	
+        <div class="row">
+        	<div class="col-md-4">
+                <div class="form-group">
+                    <label class="control-label">Select scraper</label>
+                    <select class="form-control selected-scraper">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Name</label>
+                    <input type="text" class="form-control name-scraper" />
+                </div>
+            </div>
+        </div>
+        
+    	<div class="form-group">
+    		<label class="control-label">URL</label>
+        	<textarea class="form-control input-scraper" style="min-height:200px;"></textarea>
+    	</div>
+        
+        <label class="control-label">Head Meta Data</label><br />
+        <div class="row wrap-show-head-scraper">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <button type="button" class="btn green btn-sm show-head-scraper">Add data</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 head-scrapper" style="float:none; margin-bottom:10px;display:none;">
+            <div class="row" style="padding-top:5px; background:#eee;">
+            	<div class="col-md-4">
+                	<label class="control-label">Tag</label>
+                </div>
+                <div class="col-md-3">
+                	<label class="control-label">Label</label>
+                </div>
+                <div class="col-md-2">
+                	<label class="control-label">Get data</label>
+                </div>
+                <div class="col-md-2">
+                	<label class="control-label">Attribute name</label>
+                </div>
+                <div class="col-md-1">
+                    <label class="control-label">&nbsp;</label>
+                </div>
+                
+                <div class="data-head-scraper">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input type="text" class="form-control head-tag-scraper" placeholder='title or meta[name="description"]' />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control head-label-scraper" placeholder='eg. title' />
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                        	<select class="form-control head-type-scraper">
+                            	<option value="text">Text</option>
+                                <option value="html">Html</option>
+                                <option value="attr">Attribute</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <input type="text" class="form-control head-attr-scraper" disabled placeholder='eg. content' />
+                        </div>
+                    </div>
+                    <div class="col-md-1 wrap-delete-head-scraper">
+                    	<div class="form-group">
+                    		<a href="javascript:;" title="Delete" class="delete-head-scraper" style="color:#444; display:inline-block; margin-top:8px;">
+                            	<i class="fa fa-trash" style="font-size:18px;"></i>
+							</a>
+                    	</div>
+                    </div>
+                </div>
+                <div class="wrap-add-head-scraper">
+                	<div class="col-md-12">
+                    	<div class="form-group">
+                        	<button type="button" class="btn green btn-sm add-head-scraper">Add data</button>
+						</div>
+					</div>                        
+                </div>
+			</div>
+		</div>
+        
+        <div class="row">
+            <div class="col-md-7" style="margin-bottom:10px;">
+                <label class="control-label">Parent Data</label>
+                <div class="row" style="padding-top:5px; background:#eee; margin:0;">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label">Tag</label>
+                            <input type="text" class="form-control parent-tag-scraper" placeholder='.product or .product-detail' />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label">Label</label>
+                            <input type="text" class="form-control parent-label-scraper" placeholder='eg. Product list or Product Detail' />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-5" style="margin-bottom:10px;">
+                <label class="control-label">Ignore If Parent Data</label>
+                <div class="row" style="padding-top:5px; background:#eee; margin:0;">
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <label class="control-label">Tag</label>
+                            <input type="text" class="form-control ignore-parent-tag-scraper" placeholder='.related-product' />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <label class="control-label">Data</label>
+        <div class="col-md-12" style="float:none;">
+            <div class="row" style="padding-top:5px; background:#eee;">
+            	<div class="col-md-4">
+                	<label class="control-label">Tag</label>
+                </div>
+                <div class="col-md-3">
+                	<label class="control-label">Label</label>
+                </div>
+                <div class="col-md-2">
+                	<label class="control-label">Get data</label>
+                </div>
+                <div class="col-md-2">
+                	<label class="control-label">Attribute name</label>
+                </div>
+                <div class="col-md-1">
+                    <label class="control-label">&nbsp;</label>
+                </div>
+                    
+            	<div class="data-form-scraper">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input type="text" class="form-control data-tag-scraper" placeholder='.product-title or [itemprop="title"]' />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control data-label-scraper" placeholder='eg. Title' />
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                        	<select class="form-control data-type-scraper">
+                            	<option value="text">Text</option>
+                                <option value="html">Html</option>
+                                <option value="attr">Attribute</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <input type="text" class="form-control data-attr-scraper" disabled placeholder='eg. href' />
+                        </div>
+                    </div>
+                    <div class="col-md-1 wrap-delete-data-scraper" style="display:none;">
+                    	<div class="form-group">
+                    		<a href="javascript:;" title="Delete" class="delete-data-scraper" style="color:#444; display:inline-block; margin-top:8px;">
+                            	<i class="fa fa-trash" style="font-size:18px;"></i>
+							</a>
+                    	</div>
+                    </div>
+                </div>
+                <div class="wrap-add-data-scraper">
+                	<div class="col-md-12">
+                    	<div class="form-group">
+                        	<button type="button" class="btn green btn-sm add-data-scraper">Add data</button>
+						</div>
+					</div>                        
+                </div>
+            </div>
+        </div>
+		
+		
+		<label class="control-label" style="margin: 10px 0;">Tags</label>
+        <div class="col-md-12" style="float:none;">
+            <div class="row" style="padding-top:5px; background:#eee;">
+            	<div class="tag-form-scraper-clone">
+					<div class="tag-form-scraper-heading">
+						<div class="col-md-4">
+							<label class="control-label">Tag</label>
+						</div>
+						<div class="col-md-3">
+							<label class="control-label">Label</label>
+						</div>
+						<div class="col-md-2">
+							<label class="control-label">Get data</label>
+						</div>
+						<div class="col-md-2">
+							<label class="control-label">Attribute name</label>
+						</div>
+						<div class="col-md-1">
+							<label class="control-label">&nbsp;</label>
+						</div>
+					</div>
+	
+					<div class="tags-form-scraper">
+						<div class="col-md-4">
+							<div class="form-group">
+								<input type="text" class="form-control tags-tag-scraper" placeholder='.product-category or tags' />
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<input type="text" class="form-control tags-label-scraper" placeholder='eg. Title' />
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="form-group">
+								<select class="form-control tags-type-scraper">
+									<option value="text">Text</option>
+									<option value="html">Html</option>
+									<option value="attr">Attribute</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="form-group">
+								<input type="text" class="form-control tags-attr-scraper" disabled placeholder='eg. href' />
+							</div>
+						</div>
+						<div class="col-md-1 wrap-delete-tags-scraper" style="display:none;">
+							<div class="form-group">
+								<a href="javascript:;" title="Delete" class="delete-tags-scraper" style="color:#444; display:inline-block; margin-top:8px;">
+									<i class="fa fa-trash" style="font-size:18px;"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+                </div>
+				
+				
+                <div class="wrap-add-tags-scraper">
+                	<div class="col-md-12">
+                    	<div class="form-group">
+                        	<button type="button" class="btn green btn-sm add-tags-scraper">Add tag</button>
+						</div>
+					</div>                        
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-group" style="margin-top:15px;">
+        	<button type="button" class="btn green import-scraper">Start Scrap</button>
+            <button type="button" class="btn blue save-scraper">Save scraper data for later use</button>
+			<button type="button" class="btn green import-csv">Get csv</button>
+		</div>
+        <br />
+		<br />
+        <div class="form-group">
+        	<label class="control-label">Output</label>
+			<textarea class="form-control output-scraper" style="min-height:200px;"></textarea>
+        </div>
+        <div class="form-group wrap-noresult-scraper" style="display:none;">
+        	<label class="control-label">URL without results</label>
+			<textarea class="form-control noresult-scraper" style="min-height:200px;"></textarea>
+        </div>
+    </div>
+</div>
+
+<style type="text/css">
+	.has-error .form-control { border-color:#a94442 !important; }
+</style>
+
+<script type="text/javascript">
+	function getScraperOptions (selected) {
+		var selected = selected || 0;
+		
+		$.ajax({
+			type: "POST",
+			url: "/backend/system/import/ajax/ajax.scraper.php?v="+Math.random(),
+			dataType: 'json',
+			data: {
+				mode: 'getScraperOption'
+			},
+			success: function(obj){
+				var opt = '<option value="0">New scraper</option>';
+				
+				if(!obj.error) {
+					$.each(obj.data, function(i, op) {
+						var optSelected = '';
+						
+						if (selected == op.id) {
+							var optSelected = 'selected="selected"';
+						}
+						
+						opt += '<option value="'+op.id+'" '+optSelected+'>'+op.name+'</option>';
+					});
+				}
+				
+				$('.selected-scraper').html(opt);
+			}
+		});
+	}
+	
+	
+	
+	$(document).ready(function () {
+		getScraperOptions();
+		
+		$(".import-csv").click(function(){
+			var params = $("textarea.output-scraper").val();
+			$.ajax({
+				type: "POST",
+				url: "/backend/system/import/json.php?v="+Math.random(),
+				data: {
+					mode: "getCSV"	,
+					params: "'"+params+"'"
+				},
+				dataType: 'json',
+				success: function(obj){
+					
+				}
+			});
+		});
+		
+		$('.selected-scraper').change(function () {
+			var id = $(this).val();
+			
+			$.ajax({
+				type: "POST",
+				url: "/backend/system/import/ajax/ajax.scraper.php?v="+Math.random(),
+				data: {
+					id: id,
+					mode: "getScraper"				
+				},
+				dataType: 'json',
+				success: function(obj){
+					if (!obj.error) {
+						var name = obj.data.name;
+						var input = obj.data.urls;
+						var headData = obj.data.headData;
+						var parentData = obj.data.parentData;
+						var data = obj.data.data;
+						var tags = obj.data.tags;
+						
+						$('.name-scraper').val(name);
+						$('.input-scraper').val(input);
+						
+						var dataHead = $('.data-head-scraper').first().clone();
+						$('.data-head-scraper').remove();
+						
+						if (headData != null) {
+							$('.head-scrapper').show();
+							$('.wrap-show-head-scraper').hide();
+							
+							$.each(headData, function(i,form) {
+								var newForm = dataHead.clone();
+								
+								newForm.find('.head-tag-scraper').val(form.tag);
+								newForm.find('.head-label-scraper').val(form.label);
+								newForm.find('.head-type-scraper').val(form.type);
+								newForm.find('.head-attr-scraper').val(form.attr);
+								
+								if (form.type == "attr") {
+									newForm.find('.head-attr-scraper').removeAttr('disabled');
+								}
+								else {
+									newForm.find('.head-attr-scraper').attr('disabled','disabled');
+								}
+								
+								newForm.insertBefore(".wrap-add-head-scraper");
+							});
+						}
+						else {
+							$('.head-scrapper').hide();
+							$('.wrap-show-head-scraper').show();
+							
+							var newForm = dataHead.clone();
+							newForm.find('.head-tag-scraper').val('');
+							newForm.find('.head-label-scraper').val('');
+							newForm.find('.head-type-scraper').val('text');
+							newForm.find('.head-attr-scraper').val('').attr('disabled','disabled');
+							
+							newForm.insertBefore(".wrap-add-head-scraper");
+						}
+						
+						$('.parent-tag-scraper').val(parentData.tag);
+						$('.parent-label-scraper').val(parentData.label);
+						$('.ignore-parent-tag-scraper').val(parentData.ignore);
+						
+						var dataForm = $('.data-form-scraper').first().clone();
+						$('.data-form-scraper').remove();
+						
+						$.each(data, function(i,form) {
+							var newForm = dataForm.clone();
+							
+							newForm.find('.data-tag-scraper').val(form.tag);
+							newForm.find('.data-label-scraper').val(form.label);
+							newForm.find('.data-type-scraper').val(form.type);
+							newForm.find('.data-attr-scraper').val(form.attr);
+							
+							if (form.type == "attr") {
+								newForm.find('.data-attr-scraper').removeAttr('disabled');
+							}
+							else {
+								newForm.find('.data-attr-scraper').attr('disabled','disabled');
+							}
+							
+							if (i == 0) {
+								newForm.find('.wrap-delete-data-scraper').hide();
+							}
+							else {
+								newForm.find('.wrap-delete-data-scraper').show();
+							}
+							
+							newForm.insertBefore(".wrap-add-data-scraper");
+						});
+						
+						
+						var tagsForm = $('.tags-form-scraper').first().clone();
+						//
+						
+						if(tags.length){
+							var objTags = JSON.parse(tags);
+							$('.tags-form-scraper').remove();
+							$.each(objTags, function(i,form) {
+								var newForm = tagsForm.clone();
+								
+								newForm.find('.tags-tag-scraper').val(form.tag);
+								newForm.find('.tags-label-scraper').val(form.label);
+								newForm.find('.tags-type-scraper').val(form.type);
+								newForm.find('.tags-attr-scraper').val(form.attr);
+								
+								if (form.type == "attr") {
+									newForm.find('.tags-attr-scraper').removeAttr('disabled');
+								}
+								else {
+									newForm.find('.tags-attr-scraper').attr('disabled','disabled');
+								}
+								
+								if (i == 0) {
+									newForm.find('.wrap-delete-tags-scraper').hide();
+								}
+								else {
+									newForm.find('.wrap-delete-tags-scraper').show();
+								}
+								
+								newForm.insertBefore(".wrap-add-tags-scraper");
+							}); 
+						}
+						else {
+							//$('.tags-form-scraper').remove();
+							
+						}
+						
+						
+						$('.output-scraper').val('');
+						$('.wrap-noresult-scraper').hide();
+						$('.noresult-scraper').val('');
+					}
+				}
+			});
+		});
+		
+		$('.save-scraper').click(function () {
+			var error = false;
+			var id = $('.selected-scraper').val();
+			var name = $('.name-scraper');
+			var url = $('.input-scraper');
+			
+			name.closest('.form-group').removeClass('has-error');
+			if (name.val() == "") {
+				name.closest('.form-group').addClass('has-error');
+				error = true;
+			}
+			
+			url.closest('.form-group').removeClass('has-error');
+			if (url.val() == "") {
+				url.closest('.form-group').addClass('has-error');
+				error = true;
+			}
+			
+			
+			var headMeta = [];
+			
+			if ($('.head-scrapper').is(":visible")) {
+				$('.data-head-scraper').each(function () {
+					var tag = $(this).find('.head-tag-scraper');
+					var label = $(this).find('.head-label-scraper');
+					var type = $(this).find('.head-type-scraper');
+					var attr = $(this).find('.head-attr-scraper');
+					
+					var setting = {};
+					setting["tag"] = tag.val();
+					setting["label"] = label.val();
+					setting["type"] = type.val();
+					setting["attr"] = attr.val();
+					
+					tag.closest('.form-group').removeClass('has-error');
+					if (tag.val() == "") {
+						tag.closest('.form-group').addClass('has-error');
+						error = true;
+					}
+					
+					label.closest('.form-group').removeClass('has-error');
+					if (label.val() == "") {
+						label.closest('.form-group').addClass('has-error');
+						error = true;
+					}
+					
+					attr.closest('.form-group').removeClass('has-error');
+					if (attr.val() == "" && type.val() == "attr") {
+						attr.closest('.form-group').addClass('has-error');
+						error = true;
+					}
+					
+					headMeta.push(setting);
+				});
+			}
+			
+			var parent = {};
+			var parentTag = $('.parent-tag-scraper');
+			var parentLabel = $('.parent-label-scraper');
+			var parentIgnore = $('.ignore-parent-tag-scraper');
+			parent["tag"] = parentTag.val();
+			parent["label"] = parentLabel.val();
+			parent["ignore"] = parentIgnore.val();
+			
+			parentTag.closest('.form-group').removeClass('has-error');
+			if (parentTag.val() == "") {
+				parentTag.closest('.form-group').addClass('has-error');
+				error = true;
+			}
+			
+			parentLabel.closest('.form-group').removeClass('has-error');
+			if (parentLabel.val() == "") {
+				parentLabel.closest('.form-group').addClass('has-error');
+				error = true;
+			}
+			
+			
+			var data = [];
+			
+			$('.data-form-scraper').each(function () {
+				var tag = $(this).find('.data-tag-scraper');
+				var label = $(this).find('.data-label-scraper');
+				var type = $(this).find('.data-type-scraper');
+				var attr = $(this).find('.data-attr-scraper');
+				
+				var setting = {};
+				setting["tag"] = tag.val();
+				setting["label"] = label.val();
+				setting["type"] = type.val();
+				setting["attr"] = attr.val();
+				
+				tag.closest('.form-group').removeClass('has-error');
+				if (tag.val() == "") {
+					tag.closest('.form-group').addClass('has-error');
+					error = true;
+				}
+				
+				label.closest('.form-group').removeClass('has-error');
+				if (label.val() == "") {
+					label.closest('.form-group').addClass('has-error');
+					error = true;
+				}
+				
+				attr.closest('.form-group').removeClass('has-error');
+				if (attr.val() == "" && type.val() == "attr") {
+					attr.closest('.form-group').addClass('has-error');
+					error = true;
+				}
+				
+				data.push(setting);
+			});
+			
+			
+			var tags = [];
+			
+			$('.tags-form-scraper').each(function () {
+				var tag = $(this).find('.tags-tag-scraper');
+				var label = $(this).find('.tags-label-scraper');
+				var type = $(this).find('.tags-type-scraper');
+				var attr = $(this).find('.tags-attr-scraper');
+				
+				var setting = {};
+				setting["tag"] = tag.val();
+				setting["label"] = label.val();
+				setting["type"] = type.val();
+				setting["attr"] = attr.val();
+				
+				tag.closest('.form-group').removeClass('has-error');
+				if (tag.val() == "") {
+					tag.closest('.form-group').addClass('has-error');
+					error = true;
+				}
+				
+				label.closest('.form-group').removeClass('has-error');
+				if (label.val() == "") {
+					label.closest('.form-group').addClass('has-error');
+					error = true;
+				}
+				
+				attr.closest('.form-group').removeClass('has-error');
+				if (attr.val() == "" && type.val() == "attr") {
+					attr.closest('.form-group').addClass('has-error');
+					error = true;
+				}
+				
+				tags.push(setting);
+			});
+			
+			if (!error) {
+				$.ajax({
+					type: "POST",
+					url: "/backend/system/import/ajax/ajax.scraper.php?v="+Math.random(),
+					data: {
+						id: id,
+						name: name.val(),
+						url: url.val(),
+						head: headMeta,
+						parentData: parent,
+						data: data,
+						tags: tags,
+						mode: 'saveScraper'						
+					},
+					dataType: 'json',
+					success: function(obj){
+						if (obj.error) {
+							toastr['error']("Failed to save scraper", "Error!");
+						}
+						else {
+							toastr['success']("Scraper is now saved", "Success!");
+							getScraperOptions(obj.id);
+						}
+					}
+				});
+			}
+			else {
+				toastr['error']("Please fill the required fields", "Error!");
+			}
+		});
+		
+		
+		$('.import-scraper').click(function () {
+			
+			// Validate Form
+			var error = false;
+			
+			var inputUrl = $('.input-scraper');
+			inputUrl.closest('.form-group').removeClass('has-error');
+			if (inputUrl.val() == "") {
+				inputUrl.closest('.form-group').addClass('has-error');
+				error = true;
+			}
+			
+			if ($('.head-scrapper').is(":visible")) {
+				$('.data-head-scraper').each(function () {
+					var tag = $(this).find('.head-tag-scraper');
+					var label = $(this).find('.head-label-scraper');
+					var type = $(this).find('.head-type-scraper');
+					var attr = $(this).find('.head-attr-scraper');
+					
+					tag.closest('.form-group').removeClass('has-error');
+					if (tag.val() == "") {
+						tag.closest('.form-group').addClass('has-error');
+						error = true;
+					}
+					
+					label.closest('.form-group').removeClass('has-error');
+					if (label.val() == "") {
+						label.closest('.form-group').addClass('has-error');
+						error = true;
+					}
+					
+					attr.closest('.form-group').removeClass('has-error');
+					if (attr.val() == "" && type.val() == "attr") {
+						attr.closest('.form-group').addClass('has-error');
+						error = true;
+					}
+				});
+			}
+			
+			var parentTag = $('.parent-tag-scraper');
+			var parentLabel = $('.parent-label-scraper');
+			
+			parentTag.closest('.form-group').removeClass('has-error');
+			if (parentTag.val() == "") {
+				parentTag.closest('.form-group').addClass('has-error');
+				error = true;
+			}
+			
+			parentLabel.closest('.form-group').removeClass('has-error');
+			if (parentLabel.val() == "") {
+				parentLabel.closest('.form-group').addClass('has-error');
+				error = true;
+			}
+			
+			$('.data-form-scraper').each(function () {
+				var tag = $(this).find('.data-tag-scraper');
+				var label = $(this).find('.data-label-scraper');
+				var type = $(this).find('.data-type-scraper');
+				var attr = $(this).find('.data-attr-scraper');
+				
+				tag.closest('.form-group').removeClass('has-error');
+				if (tag.val() == "") {
+					tag.closest('.form-group').addClass('has-error');
+					error = true;
+				}
+				
+				label.closest('.form-group').removeClass('has-error');
+				if (label.val() == "") {
+					label.closest('.form-group').addClass('has-error');
+					error = true;
+				}
+				
+				attr.closest('.form-group').removeClass('has-error');
+				if (attr.val() == "" && type.val() == "attr") {
+					attr.closest('.form-group').addClass('has-error');
+					error = true;
+				}
+			});
+			
+			$('.tags-form-scraper').each(function () {
+				var tag = $(this).find('.tags-tag-scraper');
+				var label = $(this).find('.tags-label-scraper');
+				var type = $(this).find('.tags-type-scraper');
+				var attr = $(this).find('.tags-attr-scraper');
+				
+				tag.closest('.form-group').removeClass('has-error');
+				if (tag.val() == "") {
+					tag.closest('.form-group').addClass('has-error');
+					error = true;
+				}
+				
+				label.closest('.form-group').removeClass('has-error');
+				if (label.val() == "") {
+					label.closest('.form-group').addClass('has-error');
+					error = true;
+				}
+				
+				attr.closest('.form-group').removeClass('has-error');
+				if (attr.val() == "" && type.val() == "attr") {
+					attr.closest('.form-group').addClass('has-error');
+					error = true;
+				}
+			});
+			
+			var urls = [];
+			var requests = [];
+			
+			// Build Array Request
+			var request = {};
+			request['head'] = [];
+			
+			$('.data-head-scraper').each(function () {
+				var tag = $(this).find('.head-tag-scraper').val();
+				var label = $(this).find('.head-label-scraper').val();
+				var type = $(this).find('.head-type-scraper').val();
+				var attr = $(this).find('.head-attr-scraper').val();
+				
+				var data = {};
+				data["label"] = label;
+				data["tag"] = tag;
+				data["type"] = type;
+				data["attr"] = attr;
+				
+				if (label != '' && tag != '' && type != '') {
+					if (type == 'attr' && attr != '') {
+						request['head'].push(data);
+					}
+					
+					if (type != 'attr') {
+						request['head'].push(data);
+					}
+				}
+			});
+			
+			
+			request['tag'] = $('.parent-tag-scraper').val();
+			request['label'] = $('.parent-label-scraper').val();
+			request['ignore'] = $('.ignore-parent-tag-scraper').val();
+			request['data'] = [];
+			
+			$('.data-form-scraper').each(function () {
+				var tag = $(this).find('.data-tag-scraper').val();
+				var label = $(this).find('.data-label-scraper').val();
+				var type = $(this).find('.data-type-scraper').val();
+				var attr = $(this).find('.data-attr-scraper').val();
+				
+				var data = {};
+				data["label"] = label;
+				data["tag"] = tag;
+				data["type"] = type;
+				data["attr"] = attr;
+				
+				if (label != '' && tag != '' && type != '') {
+					if (type == 'attr' && attr != '') {
+						request['data'].push(data);
+					}
+					
+					if (type != 'attr') {
+						request['data'].push(data);
+					}
+				}
+			});
+			
+			request['tags'] = [];
+			$('.tags-form-scraper').each(function () {
+				var tag = $(this).find('.tags-tag-scraper').val();
+				var label = $(this).find('.tags-label-scraper').val();
+				var type = $(this).find('.tags-type-scraper').val();
+				var attr = $(this).find('.tags-attr-scraper').val();
+				
+				var data = {};
+				data["label"] = label;
+				data["tag"] = tag;
+				data["type"] = type;
+				data["attr"] = attr;
+				
+				if (label != '' && tag != '' && type != '') {
+					if (type == 'attr' && attr != '') {
+						request['tags'].push(data);
+					}
+					
+					if (type != 'attr') {
+						request['tags'].push(data);
+					}
+				}
+			});
+			
+			requests.push(request);
+			
+			
+			// Split URL
+			var input = $('.input-scraper').val().split(/\n/);
+			if (input.length) {
+				$.each(input, function(i,url) {
+					if (url != '') {
+						urls.push(url);	
+					}
+				});
+			}
+			//console.log(requests);
+			
+			// Make Request
+			if (urls.length && !error) {
+				var output = [];
+				var noresult = [];
+				
+				$('.output-scraper').attr('disabled','disabled').val('');
+				$('.noresult-scraper').val('');
+				$('.wrap-noresult-scraper').hide();
+				
+				$.ajax({
+					type: "POST",
+					url: "/backend/system/import/ajax/ajax.output.php?v="+Math.random(),
+					data: {
+						urls: urls					
+					},
+					dataType: 'json',
+					success: function(obj){
+						
+						if (obj.length) {
+							$.each(obj, function(i,html) {
+								
+								var wrap = $(html);
+								
+								var headMeta = {};
+								var scrap = {};
+								var tags = {};
+								// Handle request (possible multiple)
+								$.each(requests, function(i,request) {
+									
+									// Head Meta Data
+									if (request.head.length) {											
+										$.each(request.head, function(i,data) {
+											wrap.filter(data.tag).each(function () {
+												var value = "";
+												
+												// Parsing "Type" request
+												if (data.type == "text") {
+													value = $(this).text();	
+												}
+												else if (data.type == "html") {
+													value = $(this).html();	
+												}
+												else if (data.type == "attr") {
+													value = $(this).attr(data.attr);	
+												}
+												
+												headMeta[data.label] = value;
+											});
+										});
+									}
+									
+									
+									// Tags
+									$.each(request.tags, function(i,data) {
+										var use = $(this);
+										tags[data.label] = [];										
+										wrap.find(data.tag).each(function () {
+											var value = "";
+											
+											// Parsing "Type" request
+											if (data.type == "text") {
+												value = $(this).text();	
+											}
+											else if (data.type == "html") {
+												value = $(this).html();	
+											}
+											else if (data.type == "attr") {
+												value = $(this).attr(data.attr);	
+											}
+											if( $.inArray(value, tags[data.label]) == -1 && value != ""){
+											//if (!(value in tags[data.label]) && value != "") {
+												tags[data.label].push(value);
+											} 
+											
+										});
+									});
+									
+									if (wrap.find(request.tag).length) {							
+										
+										// Parent Data
+										wrap.find(request.tag).each(function () {
+											
+											var single = $(this);
+											var singleScrap = {};
+											
+											// Data
+											$.each(request.data, function(i,data) {
+																								
+												single.find(data.tag).each(function () {
+													var value = "";
+													
+													// Parsing "Type" request
+													if (data.type == "text") {
+														value = $(this).text();	
+													}
+													else if (data.type == "html") {
+														value = $(this).html();	
+													}
+													else if (data.type == "attr") {
+														value = $(this).attr(data.attr);	
+													}
+													
+													// Checking "Ignore If Parent" if not empty
+													var ignoreData = false;
+													if (request['ignore'] != '') {
+														if ($(this).closest(request['ignore']).length > 0) {
+															ignoreData = true;
+														}
+													}
+													
+													if (!ignoreData) {
+														// If found multiple data tag. Make it array
+														if (single.find(data.tag).length > 1) {
+															
+															if (!(data.label in singleScrap)) {
+																singleScrap[data.label] = [];
+															}
+															
+															singleScrap[data.label].push(value);
+														}
+														else {
+															singleScrap[data.label] = value;
+														}
+
+													}
+													
+													if (!$.isEmptyObject(tags)) {
+														singleScrap["tags"] = tags;
+													}
+												});
+												
+												
+												
+											});
+											
+											if (!$.isEmptyObject(singleScrap)) {
+												if (!$.isArray(scrap[request.label])) {
+													scrap[request.label] = [];	
+												}
+												
+												scrap[request.label].push(singleScrap);
+											}
+										});
+										
+									}
+								});
+								
+								if (!$.isEmptyObject(scrap)) {
+									
+									// Merge head meta and scrap data
+									if (!$.isEmptyObject(headMeta)) {
+										$.extend(headMeta, scrap);
+										scrap = headMeta;
+									}
+									
+									output.push(scrap);
+								}
+								else {
+									noresult.push(urls[i]);
+								}								
+							});
+							
+							output = JSON.stringify(output);
+							output = output.replace(/'/g, "\\'")
+							
+							$('.output-scraper').removeAttr('disabled').val(output);
+							
+							if (noresult.length) {
+								$('.noresult-scraper').val(noresult.join('\n'));
+								$('.wrap-noresult-scraper').show();
+							}
+						}
+					}
+				});
+			}
+			else {
+				toastr['error']("Please fill the required fields", "Error!");
+			}
+		});
+		
+		$('.add-data-scraper').click(function () {
+			var form = $('.data-form-scraper').first().clone();
+			form.find('input').val('');
+			form.find('.data-type-scraper').val('text');
+			form.find('.wrap-delete-data-scraper').show();
+			form.find('.data-attr-scraper').attr('disabled','disabled');
+			
+			form.insertBefore(".wrap-add-data-scraper");
+		});
+		
+		$(document).off('click','.delete-data-scraper');
+		$(document).on('click','.delete-data-scraper', function () {
+			var form = $(this).closest('.data-form-scraper');
+			form.remove();
+		});
+		
+		$(document).off('change','.data-type-scraper');
+		$(document).on('change','.data-type-scraper', function () {
+			var form = $(this).closest('.data-form-scraper');
+			var attr = form.find('.data-attr-scraper');
+			var type = $(this).val();
+			
+			if (type == 'attr') {
+				attr.removeAttr('disabled');
+				attr.focus();
+			}
+			else {
+				attr.val('');
+				attr.attr('disabled','disabled');
+			}
+		});
+		
+		$('.show-head-scraper').click(function () {
+			$('.wrap-show-head-scraper').hide();
+			$('.head-scrapper').show();
+		});
+		
+		$('.add-head-scraper').click(function () {
+			var form = $('.data-head-scraper').first().clone();
+			form.find('input').val('');
+			form.find('.head-type-scraper').val('text');
+			form.find('.head-attr-scraper').attr('disabled','disabled');
+			
+			form.insertBefore(".wrap-add-head-scraper");
+		});
+		
+		$(document).off('click','.delete-head-scraper');
+		$(document).on('click','.delete-head-scraper', function () {
+			var form = $(this).closest('.data-head-scraper');
+			
+			if ($('.head-scrapper .data-head-scraper').length > 1) {
+				form.remove();
+			}
+			else {
+				form.find('input').val('');
+				form.find('.head-type-scraper').val('text');
+				form.find('.head-attr-scraper').attr('disabled','disabled');
+				$('.head-scrapper').hide();
+				$('.wrap-show-head-scraper').show();
+			}
+		});
+		
+		$(document).off('change','.head-type-scraper');
+		$(document).on('change','.head-type-scraper', function () {
+			var form = $(this).closest('.data-head-scraper');
+			var attr = form.find('.head-attr-scraper');
+			var type = $(this).val();
+			
+			if (type == 'attr') {
+				attr.removeAttr('disabled');
+				attr.focus();
+			}
+			else {
+				attr.val('');
+				attr.attr('disabled','disabled');
+			}
+		});
+		
+		
+		//tags-type-scraper
+		$('.add-tags-scraper').click(function () {
+			/* $(".tag-form-scraper-heading").show();
+			$(".tag-form-scraper-clone").show(); */
+			var form = $('.tags-form-scraper').first().clone();
+			form.find('input').val('');
+			form.find('.tags-type-scraper').val('text');
+			form.find('.wrap-delete-tags-scraper').show();
+			form.find('.tags-attr-scraper').attr('disabled','disabled');
+			//$('.tags-form-scraper').first().hide();
+			form.insertBefore(".wrap-add-tags-scraper");
+		});
+		 
+		$(document).off('click','.delete-tags-scraper');
+		$(document).on('click','.delete-tags-scraper', function () {
+			var form = $(this).closest('.tags-form-scraper');
+			form.remove();
+		});
+		
+		$(document).off('change','.tags-type-scraper');
+		$(document).on('change','.tags-type-scraper', function () {
+			var form = $(this).closest('.tags-form-scraper');
+			var attr = form.find('.tags-attr-scraper');
+			var type = $(this).val();
+			
+			if (type == 'attr') {
+				attr.removeAttr('disabled');
+				attr.focus();
+			}
+			else {
+				attr.val('');
+				attr.attr('disabled','disabled');
+			}
+		});
+	});
+</script>

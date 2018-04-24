@@ -1,0 +1,1 @@
+<?php print shell_exec("composer update");?>

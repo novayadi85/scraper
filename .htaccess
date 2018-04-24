@@ -1,0 +1,12 @@
+#AuthType Basic
+#AuthName "Scraper Admin Tools"
+#AuthUserFile /var/www/jeppekjaersgaard.dk/public_html/system/.htpasswd
+#Require valid-user
+
+DirectoryIndex index.php
+RewriteEngine On
+RewriteBase /system/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
